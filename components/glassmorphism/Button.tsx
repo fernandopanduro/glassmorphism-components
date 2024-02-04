@@ -1,9 +1,13 @@
+import Link from "next/link";
 import React from "react";
 
-type Props = {};
+type Props = {
+  href: string;
+  name: string;
+};
 
-const Button = (props: Props) => {
-  return <div>Button</div>;
+const Button = ({ href, name }: Props) => {
+  return <Link href={href}>{name}</Link>;
 };
 
 export default Button;
