@@ -35,9 +35,9 @@ const Installation = (props: Props) => {
             and adjust it so it fulfills your needs.
           </p>
           <p className="leading-7 [&amp;:not(:first-child)]:mt-6">
-            Keep in mind that these are YOUR components. It's on you to make
-            them more reusable and accessible. I created this to help you get
-            started with glassmorphism.
+            Keep in mind that these are YOUR components. It&apos;s on you to
+            make them more reusable and accessible. I created this to help you
+            get started with glassmorphism.
           </p>
         </div>
         <Pagination

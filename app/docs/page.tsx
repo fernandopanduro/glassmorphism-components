@@ -28,8 +28,9 @@ const Docs = (props: Props) => {
             written in React and Tailwind.
           </p>
           <p className="leading-7 [&amp;:not(:first-child)]:mt-6">
-            This is <strong>NOT</strong> a component library. It's a collection
-            of re-usable components that you can copy and paste into your apps.
+            This is <strong>NOT</strong> a component library. It&apos;s a
+            collection of re-usable components that you can copy and paste into
+            your apps.
           </p>
           <p className="leading-7 [&amp;:not(:first-child)]:mt-6">
             Pick the components you need. Copy and paste the code into your
