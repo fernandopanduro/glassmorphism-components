@@ -22,7 +22,7 @@ export default function Home() {
           Beautifully designed components that you can copy and paste into your
           apps. Accessible. Customizable. Open Source.
         </span>
-        <Button href={"/docs"} name="Get Started" />
+        <Link href={"/docs"}>Get Started</Link>
         <Link href={"github"} className="flex gap-2">
           <FaGithub size={24} />
           Github

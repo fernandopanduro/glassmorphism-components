@@ -1,9 +1,10 @@
 import React from "react";
+import Button from "../glassmorphism/Button";
 
 type Props = {};
 
 const ButtonExample = (props: Props) => {
-  return <div>ButtonExample</div>;
+  return <Button>Touch Me</Button>;
 };
 
 export default ButtonExample;

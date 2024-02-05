@@ -48,13 +48,11 @@ const ComponentPage = async ({ params }: Props) => {
   return (
     <div className="flex-1 flex gap-3">
       <section className="flex-1">
-        <div>
-          <Component
-            name={params.name}
-            component={code}
-            exampleComponent={<currentComponent.exampleComponent />}
-          />
-        </div>
+        <Component
+          name={params.name}
+          component={code}
+          exampleComponent={<currentComponent.exampleComponent />}
+        />
         <Pagination
           prev={
             currentComponent.prevComponent

@@ -1,6 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import Button from "./glassmorphism/Button";
 
 type Props = {
   prev?: {
@@ -29,25 +30,23 @@ export default function Pagination({ prev, next }: Props) {
   return (
     <div className={`${justifyContent} mt-8 flex w-full items-center`}>
       {prev?.name && (
-        <button
-          className="flex cursor-pointer items-center rounded-md border-2 border-black bg-[#bc95d4] px-5 py-2 text-sm font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none m400:px-3.5 m400:text-xs"
+        <Button
           onClick={() => {
             router.push(prev.path);
           }}>
           <FaArrowLeft className="mr-2" />
           {prev.name}
-        </button>
+        </Button>
       )}
 
       {next?.name && (
-        <button
-          className="flex cursor-pointer items-center rounded-md border-2 border-black bg-[#bc95d4] px-5 py-2 text-sm font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none m400:px-3.5 m400:text-xs"
+        <Button
           onClick={() => {
             router.push(next.path);
           }}>
           {next.name}
           <FaArrowRight className="ml-2" />
-        </button>
+        </Button>
       )}
     </div>
   );

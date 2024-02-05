@@ -1,6 +1,5 @@
 import Heading from "@/components/Heading";
 import Pagination from "@/components/Pagination";
-import Link from "next/link";
 import React from "react";
 
 type Props = {};

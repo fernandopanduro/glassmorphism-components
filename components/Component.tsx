@@ -16,7 +16,7 @@ export default function Component({
   exampleComponent,
 }: Props) {
   return (
-    <div id={name} className="w-full text-sm">
+    <div id={name} className="space-y-2 pt-5">
       <Heading text={name} />
 
       <h2
@@ -24,8 +24,10 @@ export default function Component({
         className="font-heading mt-12 scroll-m-20 border-b pb-2 text-2xl font-semibold tracking-tight first:mt-0">
         Usage
       </h2>
-      <Code code={component} />
-      <CopyCode code={component} />
+      <div className="flex flex-col gap-5 justify-center items-center w-full">
+        <Code code={component} />
+        <CopyCode code={component} />
+      </div>
 
       <h2
         id="example"
