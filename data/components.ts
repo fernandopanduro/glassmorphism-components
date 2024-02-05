@@ -2,10 +2,12 @@ import ButtonExample from "@/components/glassmorphism-example/Button";
 import DrawerExample from "@/components/glassmorphism-example/Drawer";
 import ModalExample from "@/components/glassmorphism-example/Modal";
 import HoverCardExample from "@/components/glassmorphism-example/Modal";
+import TooltipExample from "@/components/glassmorphism-example/Tooltip";
 import Button from "@/components/glassmorphism/Button";
 import Drawer from "@/components/glassmorphism/Drawer";
 import Modal from "@/components/glassmorphism/Modal";
 import HoverCard from "@/components/glassmorphism/Modal";
+import Tooltip from "@/components/glassmorphism/Tooltip";
 
 type ComponentObj = {
   name: string;
@@ -33,7 +35,14 @@ const components: ComponentObj[] = [
     name: "modal",
     component: Modal,
     exampleComponent: ModalExample,
+    nextComponent: "tooltip",
     prevComponent: "drawer",
+  },
+  {
+    name: "tooltip",
+    component: Tooltip,
+    exampleComponent: TooltipExample,
+    prevComponent: "modal",
   },
 ];
 
