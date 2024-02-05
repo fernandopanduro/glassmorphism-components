@@ -23,7 +23,10 @@ export default function Home() {
           apps. Accessible. Customizable. Open Source.
         </span>
         <Link href={"/docs"}>Get Started</Link>
-        <Link href={"github"} className="flex gap-2">
+        <Link
+          target="__blanck"
+          href={"https://github.com/fernandopanduro/glassmorphism-components"}
+          className="flex gap-2">
           <FaGithub size={24} />
           Github
         </Link>
