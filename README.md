@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![Room Redesing](/public/preview.png)
 
-## Getting Started
+# Components Glassmorphism
+El proyecto es una aplicación web construida con NextJS, ReactJS, TailwindCSS, diseñada para proporcionar para dar sugerencia de diseño de habitaciones.
 
-First, run the development server:
+## Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Puedes probar aplicación visitando la página de la aplicación [aquí](https://glassmorphism-components.vercel.app/).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Construido 
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+* [NPM](https://www.npmjs.com/) - Manejador de dependencias
+* [NextJS](https://nextjs.org/) - Framework Programacion
+* [React JS](https://create-react-app.dev/) - Libreria principal
+* [Typescript](https://developer.mozilla.org/es/docs/Web/JavaScript) - Lenguaje de programacion secundario
+* [TailwindCSS](https://tailwindcss.com/) - Framework CSS
 
-## Learn More
+  
+## 🧑‍💻 Instalación
 
-To learn more about Next.js, take a look at the following resources:
+Para configurar el proyecto localmente, siga estos pasos:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone el repositorio:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   git clone https://github.com/fernandopanduro/glassmorphism-components.git
+   ```
 
-## Deploy on Vercel
+2. Navegue hasta el directorio del proyecto:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   cd glassmorphism-components
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3. Instale las dependencias del proyecto:
+
+   ```bash
+   npm install
+   ```
+
+
+## Uso
+
+Una vez finalizado el proceso de instalación, puede utilizar los siguientes scripts npm para trabajar con el proyecto:
+
+- Inicie el servidor de desarrollo:
+
+  ```bash
+  npm run dev
+  ```
+
+  Este comando lanza el servidor de desarrollo utilizando Vite, que proporciona un entorno de desarrollo de recarga en caliente. La aplicación será accesible en `http://localhost:3000`.
+
+- Construye el proyecto para producción:
+
+  ```bash
+  npm run build
+  ```
+
+
+## ✒️ Autor 
+
+* **Fernando Panduro** - *Desarrollador principal* - [fernandopanduro](https://github.com/fernandopanduro)
+
+
+## 🎁 Expresiones de Gratitud 
+
+* Comenta a otros sobre este proyecto 📢
+* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
+* Se agradece su atencion 👌.
+
+---
+⌨️ con 💪 por [Fernando](https://github.com/fernandopanduro)
