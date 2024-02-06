@@ -1,9 +1,11 @@
+import BadgeExample from "@/components/glassmorphism-example/BadgeExample";
 import ButtonExample from "@/components/glassmorphism-example/Button";
 import DrawerExample from "@/components/glassmorphism-example/Drawer";
 import InputExample from "@/components/glassmorphism-example/Input";
 import ModalExample from "@/components/glassmorphism-example/Modal";
 import HoverCardExample from "@/components/glassmorphism-example/Modal";
 import TooltipExample from "@/components/glassmorphism-example/Tooltip";
+import Badge from "@/components/glassmorphism/Badge";
 import Button from "@/components/glassmorphism/Button";
 import Drawer from "@/components/glassmorphism/Drawer";
 import Input from "@/components/glassmorphism/Input";
@@ -51,7 +53,14 @@ const components: ComponentObj[] = [
     name: "input",
     component: Input,
     exampleComponent: InputExample,
+    nextComponent: "badge",
     prevComponent: "tooltip",
+  },
+  {
+    name: "badge",
+    component: Badge,
+    exampleComponent: BadgeExample,
+    prevComponent: "input",
   },
 ];
 
