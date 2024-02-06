@@ -43,19 +43,19 @@ const Header = () => {
             className="px-4 py-1"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}>
-            <Link href={"/Docs"}>Docs</Link>
+            <Link href={"/docs"}>Docs</Link>
           </li>
           <li
             className="px-4 py-1"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}>
-            <Link href={"/Docs/Components"}>Components</Link>
+            <Link href={"/docs/components/button"}>Components</Link>
           </li>
           <li
             className="px-4 py-1"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}>
-            <Link href={"/Pricing"}>Princing</Link>
+            <Link href={"/pricing"}>Princing</Link>
           </li>
           <li
             className="px-4 py-1"

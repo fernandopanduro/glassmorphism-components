@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Sidebar() {
   return (
-    <aside className="h-[calc(100svh-88px)] max-h-[calc(100svh-88px)] overflow-y-auto border-r-4 border-black w-[300px]">
-      <div className=" block border-b-4 border-r-4 border-black p-4 text-xl font-bold m800:p-4 m800:text-base">
+    <aside className="h-[calc(100svh-88px)] max-h-[calc(100svh-88px)] overflow-y-auto w-[300px]">
+      <div className=" block p-4 text-xl font-bold m800:p-4 m800:text-base">
         Getting started
       </div>
       <div className="grid grid-flow-row auto-rows-max text-sm">
@@ -19,7 +19,7 @@ export default function Sidebar() {
           Installation
         </Link>
       </div>
-      <div className="sidebaritem block border-b-4 border-r-4 border-black p-4 text-xl font-bold m800:p-4 m800:text-base">
+      <div className="sidebaritem block  p-4 text-xl font-bold m800:p-4 m800:text-base">
         Components
       </div>
       <div className="grid grid-flow-row auto-rows-max text-sm">
