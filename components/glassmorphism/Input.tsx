@@ -10,7 +10,7 @@ type Props = {
 const Input = ({ type, value, setValue, placeholder }: Props) => {
   return (
     <input
-      className="flex h-9 w-full rounded-md border border-white/05 bg-white/10 backdrop-blur-[2px] focus-visible:backdrop-blur-sm px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+      className="border-1 block h-12 w-full rounded-md border border-double border-slate-800 border-transparent bg-[linear-gradient(#000,#000),linear-gradient(to_right,#334454,#334454)]	bg-origin-border px-3 py-2 text-slate-200 transition-all duration-500 [background-clip:padding-box,_border-box] placeholder:text-slate-500 focus:bg-[linear-gradient(#000,#000),linear-gradient(to_right,#c7d2fe,#8678f9)] focus:outline-none"
       type={type}
       value={value}
       onChange={e => {
