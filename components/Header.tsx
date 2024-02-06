@@ -29,7 +29,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full h-20 bg-white/05 backdrop-blur-sm flex items-center z-10">
-      <div className="mx-auto flex items-center justify-between gap-2 container z-20">
+      <div className="mx-auto flex items-center justify-between gap-2 container z-50">
         <ul className="flex items-center">
           <li
             className="px-4 py-1"

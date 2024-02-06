@@ -8,10 +8,9 @@ type Props = {
 const Button = ({ children, onClick }: Props) => {
   return (
     <button
-      className="relative group flex items-center capitalize bg-white/5 text-white backdrop-blur-sm px-4 py-2 rounded-md border-b border-r border-white/15 transition-all overflow-hidden w-max"
+      className="inline-flex h-12 animate-background-shine items-center justify-center rounded-md border border-gray-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-gray-400 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-50 capitalize"
       onClick={onClick}>
       {children}
-      <span className="before:absolute before:top-0 before:left-0 before:w-1/2 before:h-full before:bg-gradient-to-l before:from-white/10 before:to-transparent before:skew-x-[45deg] before:transition-all before:translate-x-0 group-hover:before:translate-x-[200%]"></span>
     </button>
   );
 };
