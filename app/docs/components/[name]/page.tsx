@@ -16,15 +16,15 @@ async function readFilePath(filePath: string) {
   return fileContent;
 }
 
-export async function generateStaticParams() {
-  const componentSlugs = COMPONENTS.map(component => ({
-    slug: component.slug,
-  }));
+// export async function generateStaticParams() {
+//   const componentSlugs = COMPONENTS.map(component => ({
+//     name: component.slug,
+//   }));
 
-  return componentSlugs;
-}
+//   return componentSlugs;
+// }
 
-export const dynamicParams = false;
+export const dynamicParams = true;
 
 const ComponentPage = async ({ params }: { params: { name: string } }) => {
   console.log(params);
