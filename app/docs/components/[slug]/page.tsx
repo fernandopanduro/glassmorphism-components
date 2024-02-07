@@ -16,22 +16,20 @@ async function readFilePath(filePath: string) {
   return fileContent;
 }
 
-// export async function generateStaticParams() {
-//   const componentSlugs = COMPONENTS.map(component => ({
-//     name: component.slug,
-//   }));
+export async function generateStaticParams() {
+  const componentSlugs = COMPONENTS.map(component => ({
+    slug: component.slug,
+  }));
 
-//   return componentSlugs;
-// }
+  return componentSlugs;
+}
 
 export const dynamicParams = true;
 
-const ComponentPage = async ({ params }: { params: { name: string } }) => {
-  console.log(params);
-  const currentComponentData = COMPONENTS.find(component => {
-    console.log(component.slug);
-    return component.slug === params.name;
-  });
+const ComponentPage = async ({ params }: { params: { slug: string } }) => {
+  const currentComponentData = COMPONENTS.find(
+    component => component.slug === params.slug
+  );
 
   if (!currentComponentData) {
     return <div>Component not found</div>;
