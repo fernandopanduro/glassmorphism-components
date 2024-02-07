@@ -1,5 +1,5 @@
 import React from "react";
-import Badge from "../glassmorphism/Badge";
+import Badge from "../lab/Badge";
 
 type Props = {};
 

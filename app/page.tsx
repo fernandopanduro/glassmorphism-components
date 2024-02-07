@@ -1,4 +1,4 @@
-import Button from "@/components/glassmorphism/Button";
+import Button from "@/components/lab/button/Button";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import bg from "@/public/cube.jpg";

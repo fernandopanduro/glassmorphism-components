@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Input from "../glassmorphism/Input";
+import Input from "../lab/Input";
 
 type Props = {};
 

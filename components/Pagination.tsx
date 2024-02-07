@@ -1,7 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import Button from "./glassmorphism/Button";
+import Button from "./lab/button/Button";
 
 type Props = {
   prev?: {

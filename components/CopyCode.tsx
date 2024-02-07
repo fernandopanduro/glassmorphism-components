@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Button from "./glassmorphism/Button";
+import Button from "./lab/button/Button";
 
 export default function CopyCode({ code }: { code: string }) {
   const [isClicked, setIsClicked] = useState(false);

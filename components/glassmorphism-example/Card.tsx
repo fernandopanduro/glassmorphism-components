@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../glassmorphism/Card";
+import Card from "../lab/Card";
 
 const CardExample = () => {
   return (

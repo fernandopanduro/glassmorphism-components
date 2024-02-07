@@ -3,7 +3,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { FaGithub } from "react-icons/fa";
-import Button from "./glassmorphism/Button";
+import Button from "./lab/button/Button";
 
 const Header = () => {
   const [menuVisible, setMenuVisible] = useState(false);

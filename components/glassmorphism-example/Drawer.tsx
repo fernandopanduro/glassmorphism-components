@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import Drawer from "../glassmorphism/Drawer";
-import Button from "../glassmorphism/Button";
+import Drawer from "../lab/Drawer";
+import Button from "../lab/button/Button";
 
 export default function DrawerExample() {
   const [isDrawerActive, setIsDrawerActive] = useState(false);

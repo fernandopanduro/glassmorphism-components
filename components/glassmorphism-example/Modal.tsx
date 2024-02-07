@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import Button from "../glassmorphism/Button";
-import Modal from "../glassmorphism/Modal";
+import Button from "../lab/button/Button";
+import Modal from "../lab/Modal";
 
 type Props = {};
 

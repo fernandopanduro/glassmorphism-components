@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../glassmorphism/Button";
+import Button from "../lab/button/Button";
 
 type Props = {};
 

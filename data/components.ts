@@ -6,14 +6,55 @@ import InputExample from "@/components/glassmorphism-example/Input";
 import ModalExample from "@/components/glassmorphism-example/Modal";
 import HoverCardExample from "@/components/glassmorphism-example/Modal";
 import TooltipExample from "@/components/glassmorphism-example/Tooltip";
-import Badge from "@/components/glassmorphism/Badge";
-import Button from "@/components/glassmorphism/Button";
-import Card from "@/components/glassmorphism/Card";
-import Drawer from "@/components/glassmorphism/Drawer";
-import Input from "@/components/glassmorphism/Input";
-import Modal from "@/components/glassmorphism/Modal";
-import HoverCard from "@/components/glassmorphism/Modal";
-import Tooltip from "@/components/glassmorphism/Tooltip";
+import Badge from "@/components/lab/Badge";
+import Button from "@/components/lab/button/Button";
+import Card from "@/components/lab/Card";
+import Drawer from "@/components/lab/Drawer";
+import Input from "@/components/lab/Input";
+import Modal from "@/components/lab/Modal";
+import HoverCard from "@/components/lab/Modal";
+import Tooltip from "@/components/lab/Tooltip";
+const TWCONFIG = {
+  ["text-gradient"]: {
+    animation: {
+      "text-gradient": "text-gradient 1.5s linear infinite",
+    },
+    keyframes: {
+      "text-gradient": {
+        to: {
+          backgroundPosition: "200% center",
+        },
+      },
+    },
+  },
+  ["background-shine"]: {
+    animation: {
+      "background-shine": "background-shine 2s linear infinite",
+    },
+    keyframes: {
+      "background-shine": {
+        from: { backgroundPosition: "0 0" },
+        to: { backgroundPosition: "-200% 0" },
+      },
+    },
+  },
+  ["pulse-slow"]: {
+    animation: {
+      "pulse-slow": "pulse 6s infinite cubic-bezier(0.4, 0, 0.6, 1)",
+    },
+  },
+  ["border-width"]: {
+    animation: {
+      "border-width": "border-width 3s infinite alternate",
+    },
+    keyframes: {
+      "border-width": {
+        from: { width: "10px", opacity: "0" },
+        to: { width: "100px", opacity: "1" },
+      },
+    },
+  },
+};
 
 type ComponentObj = {
   name: string;
@@ -22,6 +63,18 @@ type ComponentObj = {
   prevComponent?: string;
   nextComponent?: string;
 };
+
+export const COMPONENTS = [
+  {
+    name: "Button",
+    component: Button,
+    slug: "button",
+    type: "button",
+    twConfig: TWCONFIG["background-shine"],
+    nextComponent: "drawer",
+    prevComponent: null,
+  },
+];
 
 const components: ComponentObj[] = [
   {
