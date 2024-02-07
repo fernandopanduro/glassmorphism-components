@@ -13,7 +13,7 @@ export async function highlight(code: string) {
   const tokens = highlighter.codeToThemedTokens(code, "tsx", "nord", {
     includeExplanation: false,
   });
-  const html = renderToHtml(tokens, { bg: "#151515" });
+  const html = renderToHtml(tokens, { bg: "transparent" });
 
   return html;
 }
