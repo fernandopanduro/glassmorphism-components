@@ -1,4 +1,4 @@
-import components from "@/data/components";
+import { COMPONENTS } from "@/data/components";
 import Link from "next/link";
 
 export default function Sidebar() {
@@ -23,10 +23,10 @@ export default function Sidebar() {
         Components
       </div>
       <div className="grid grid-flow-row auto-rows-max text-sm">
-        {components.map((item, index) => {
+        {COMPONENTS.map((item, index) => {
           return (
             <Link
-              href={`/docs/components/${item.name}`}
+              href={`/docs/components/${item.slug}`}
               key={index}
               className="group flex w-full items-center rounded-md border border-transparent px-2 py-1 hover:underline text-muted-foreground capitalize">
               {item.name}

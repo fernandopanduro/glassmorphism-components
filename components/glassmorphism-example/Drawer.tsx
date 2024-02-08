@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import Drawer from "../lab/Drawer";
+import Drawer from "../lab/drawer/Drawer";
 import Button from "../lab/button/Button";
 
 export default function DrawerExample() {

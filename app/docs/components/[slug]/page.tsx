@@ -50,7 +50,7 @@ const ComponentPage = async ({ params }: { params: { slug: string } }) => {
         </h1>
         <div className="w-full">
           <ComponentPlayground isCentered>
-            <currentComponentData.component />
+            <currentComponentData.exampleComponent />
           </ComponentPlayground>
           <div className="mt-8">
             <CodeBlock code={code} lang="tsx" />

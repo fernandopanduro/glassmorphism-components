@@ -9,7 +9,7 @@ import TooltipExample from "@/components/glassmorphism-example/Tooltip";
 import Badge from "@/components/lab/Badge";
 import Button from "@/components/lab/button/Button";
 import Card from "@/components/lab/Card";
-import Drawer from "@/components/lab/Drawer";
+import Drawer from "@/components/lab/drawer/Drawer";
 import Input from "@/components/lab/Input";
 import Modal from "@/components/lab/Modal";
 import HoverCard from "@/components/lab/Modal";
@@ -59,71 +59,83 @@ const TWCONFIG = {
 type ComponentObj = {
   name: string;
   component: any;
-  exampleComponent?: any;
+  exampleComponent: any;
+  slug: string;
+  type: string;
+  twConfig?: any;
   prevComponent?: string;
   nextComponent?: string;
 };
 
-export const COMPONENTS = [
+export const COMPONENTS: ComponentObj[] = [
   {
     name: "Button",
     component: Button,
+    exampleComponent: ButtonExample,
     slug: "button",
     type: "button",
     twConfig: TWCONFIG["background-shine"],
     nextComponent: "drawer",
-    prevComponent: null,
-  },
-];
-
-const components: ComponentObj[] = [
-  {
-    name: "button",
-    component: Button,
-    exampleComponent: ButtonExample,
-    nextComponent: "drawer",
   },
   {
-    name: "drawer",
+    name: "Drawer",
     component: Drawer,
     exampleComponent: DrawerExample,
-    nextComponent: "modal",
-    prevComponent: "button",
-  },
-  {
-    name: "modal",
-    component: Modal,
-    exampleComponent: ModalExample,
-    nextComponent: "tooltip",
-    prevComponent: "drawer",
-  },
-  {
-    name: "tooltip",
-    component: Tooltip,
-    exampleComponent: TooltipExample,
-    nextComponent: "input",
-    prevComponent: "modal",
-  },
-  {
-    name: "input",
-    component: Input,
-    exampleComponent: InputExample,
-    nextComponent: "badge",
-    prevComponent: "tooltip",
-  },
-  {
-    name: "badge",
-    component: Badge,
-    exampleComponent: BadgeExample,
-    prevComponent: "input",
-    nextComponent: "card",
-  },
-  {
-    name: "card",
-    component: Card,
-    exampleComponent: CardExample,
-    prevComponent: "badge",
+    slug: "drawer",
+    type: "drawer",
+    prevComponent: "Button",
+    nextComponent: "Drawer",
   },
 ];
 
-export default components;
+// const components: ComponentObj[] = [
+//   {
+//     name: "button",
+//     component: Button,
+//     exampleComponent: ButtonExample,
+//     nextComponent: "drawer",
+//   },
+//   {
+//     name: "drawer",
+//     component: Drawer,
+//     exampleComponent: DrawerExample,
+//     nextComponent: "modal",
+//     prevComponent: "button",
+//   },
+//   {
+//     name: "modal",
+//     component: Modal,
+//     exampleComponent: ModalExample,
+//     nextComponent: "tooltip",
+//     prevComponent: "drawer",
+//   },
+//   {
+//     name: "tooltip",
+//     component: Tooltip,
+//     exampleComponent: TooltipExample,
+//     nextComponent: "input",
+//     prevComponent: "modal",
+//   },
+//   {
+//     name: "input",
+//     component: Input,
+//     exampleComponent: InputExample,
+//     nextComponent: "badge",
+//     prevComponent: "tooltip",
+//   },
+//   {
+//     name: "badge",
+//     component: Badge,
+//     exampleComponent: BadgeExample,
+//     prevComponent: "input",
+//     nextComponent: "card",
+//   },
+//   {
+//     name: "card",
+//     component: Card,
+//     exampleComponent: CardExample,
+//     prevComponent: "badge",
+//   },
+// ];
+
+// export default components;
