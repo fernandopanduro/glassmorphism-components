@@ -15,6 +15,7 @@ const config: Config = {
       },
       animation: {
         "background-shine": "background-shine 2s linear infinite",
+        "border-width": "border-width 3s infinite alternate",
       },
       keyframes: {
         "background-shine": {
@@ -23,6 +24,16 @@ const config: Config = {
           },
           to: {
             backgroundPosition: "-200% 0",
+          },
+        },
+        "border-width": {
+          from: {
+            width: "10px",
+            opacity: "0",
+          },
+          to: {
+            width: "100px",
+            opacity: "1",
           },
         },
       },

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Input from "../lab/input/Input";
+import Input from "../lab/input/InputSpotlightBorder";
 
 type Props = {};
 

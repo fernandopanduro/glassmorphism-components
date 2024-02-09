@@ -3,7 +3,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { FaGithub } from "react-icons/fa";
-import Button from "./lab/button/Button";
+import Button from "./lab/button/ButtonBackgroundShine";
 
 const Header = () => {
   const [menuVisible, setMenuVisible] = useState(false);

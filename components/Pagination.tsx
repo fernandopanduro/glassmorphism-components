@@ -1,7 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import Button from "./lab/button/Button";
+import Button from "./lab/button/ButtonBackgroundShine";
 
 type Props = {
   prev?: {

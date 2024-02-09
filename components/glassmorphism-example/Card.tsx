@@ -1,12 +1,8 @@
 import React from "react";
-import Card from "../lab/card/Card";
+import CardSpotlight from "../lab/card/CardSpotlight";
 
 const CardExample = () => {
-  return (
-    <Card>
-      <h1>Card Content</h1>
-    </Card>
-  );
+  return <CardSpotlight />;
 };
 
 export default CardExample;

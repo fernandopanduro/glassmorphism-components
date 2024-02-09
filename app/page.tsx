@@ -1,4 +1,4 @@
-import Button from "@/components/lab/button/Button";
+import Button from "@/components/lab/button/ButtonBackgroundShine";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import bg from "@/public/cube.jpg";

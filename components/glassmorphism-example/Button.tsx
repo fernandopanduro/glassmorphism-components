@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../lab/button/Button";
+import Button from "../lab/button/ButtonBackgroundShine";
 
 type Props = {};
 

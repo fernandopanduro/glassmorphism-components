@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import ReactDom from "react-dom";
 import { MdClose } from "react-icons/md";
-import Button from "../button/Button";
+import Button from "../button/ButtonBackgroundShine";
 
 type Props = {
   active: boolean;

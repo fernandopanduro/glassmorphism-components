@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Drawer from "../lab/drawer/Drawer";
-import Button from "../lab/button/Button";
+import Button from "../lab/button/ButtonBackgroundShine";
 
 export default function DrawerExample() {
   const [isDrawerActive, setIsDrawerActive] = useState(false);

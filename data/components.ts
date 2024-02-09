@@ -1,19 +1,24 @@
 import BadgeExample from "@/components/glassmorphism-example/BadgeExample";
 import ButtonExample from "@/components/glassmorphism-example/Button";
-import CardExample from "@/components/glassmorphism-example/Card";
-import DrawerExample from "@/components/glassmorphism-example/Drawer";
-import InputExample from "@/components/glassmorphism-example/Input";
-import ModalExample from "@/components/glassmorphism-example/Modal";
-import HoverCardExample from "@/components/glassmorphism-example/Modal";
+
 import TooltipExample from "@/components/glassmorphism-example/Tooltip";
-import Badge from "@/components/lab/badge/Badge";
-import Button from "@/components/lab/button/Button";
-import Card from "@/components/lab/card/Card";
-import Drawer from "@/components/lab/drawer/Drawer";
-import Input from "@/components/lab/input/Input";
-import Modal from "@/components/lab/modal/Modal";
-import HoverCard from "@/components/lab/modal/Modal";
+import Badge from "@/components/lab/badge/BadgeShine";
+import Button from "@/components/lab/button/ButtonBackgroundShine";
+import ButtonAnimatedGradient from "@/components/lab/button/ButtonBackgroundSpotlight";
+import ButtonRotatingBackgroundGradient from "@/components/lab/button/ButtonRotatingBackgroundGradient";
+
+import InputGradientBorder from "@/components/lab/input/InputGradientBorder";
+
 import Tooltip from "@/components/lab/tooltip/Tooltip";
+import InputSpotlightBorder from "@/components/lab/input/InputSpotlightBorder";
+import InputPulseBorder from "@/components/lab/input/InputPulseBorder";
+import CardAnimatedBorderGradient from "@/components/lab/card/CardAnimatedBorderGradient";
+import CardSpotlight from "@/components/lab/card/CardSpotlight";
+import CardPulseBorder from "@/components/lab/card/CardPulseBorder";
+import CardTilt from "@/components/lab/card/CardTilt";
+import ButtonBackgroundShine from "@/components/lab/button/ButtonBackgroundShine";
+import BadgeShine from "@/components/lab/badge/BadgeShine";
+import BadgeAnimatedGradientBorder from "@/components/lab/badge/BadgeAnimatedGradientBorder";
 const TWCONFIG = {
   ["text-gradient"]: {
     animation: {
@@ -69,40 +74,93 @@ type ComponentObj = {
 
 export const COMPONENTS: ComponentObj[] = [
   {
-    name: "Button",
-    component: Button,
-    exampleComponent: ButtonExample,
-    slug: "button",
+    name: "Button Background Shine",
+    component: ButtonBackgroundShine,
+    exampleComponent: ButtonBackgroundShine,
+    slug: "button-background-shine",
     type: "button",
     twConfig: TWCONFIG["background-shine"],
-    nextComponent: "drawer",
   },
   {
-    name: "Badge",
-    component: Badge,
-    exampleComponent: BadgeExample,
-    slug: "badge",
+    name: "Button Background Spotlight",
+    component: ButtonAnimatedGradient,
+    exampleComponent: ButtonAnimatedGradient,
+    slug: "ButtonBackgroundSpotlight",
+    type: "button",
+  },
+  {
+    name: "Button Rotating Background Gradient",
+    component: ButtonRotatingBackgroundGradient,
+    exampleComponent: ButtonRotatingBackgroundGradient,
+    slug: "button-rotating-background-gradient",
+    type: "button",
+  },
+  {
+    name: "Badge Shine",
+    component: BadgeShine,
+    exampleComponent: BadgeShine,
+    slug: "badge-shine",
     type: "badge",
-    prevComponent: "Drawer",
-    nextComponent: "Card",
+    twConfig: TWCONFIG["background-shine"],
   },
   {
-    name: "Card",
-    component: Card,
-    exampleComponent: CardExample,
-    slug: "card",
+    name: "Badge Animated Gradient Border",
+    component: BadgeAnimatedGradientBorder,
+    exampleComponent: BadgeAnimatedGradientBorder,
+    slug: "badge-animated-gradient-border",
+    type: "badge",
+  },
+
+  {
+    name: "Card Animated Border Gradient",
+    component: CardAnimatedBorderGradient,
+    exampleComponent: CardAnimatedBorderGradient,
+    slug: "card-animated-border-gradient",
     type: "card",
-    prevComponent: "Badge",
-    nextComponent: "Input",
   },
   {
-    name: "Input",
-    component: Input,
-    exampleComponent: InputExample,
-    slug: "input",
+    name: "Card Spotlight",
+    component: CardSpotlight,
+    exampleComponent: CardSpotlight,
+    slug: "card-spotlight",
+    type: "card",
+  },
+  {
+    name: "Card Pulse Border",
+    component: CardPulseBorder,
+    exampleComponent: CardPulseBorder,
+    slug: "card-pulse-border",
+    type: "card",
+    twConfig: TWCONFIG["border-width"],
+  },
+  {
+    name: "Card Tilt",
+    component: CardTilt,
+    exampleComponent: CardTilt,
+    slug: "card-tilt",
+    type: "card",
+  },
+  {
+    name: "Input Spotlight Border",
+    component: InputSpotlightBorder,
+    exampleComponent: InputSpotlightBorder,
+    slug: "input-spotlight-border",
     type: "input",
-    prevComponent: "Card",
-    nextComponent: "Tooltip",
+  },
+  {
+    name: "Input Gradient Border",
+    component: InputGradientBorder,
+    exampleComponent: InputGradientBorder,
+    slug: "input-gradient-border",
+    type: "input",
+  },
+  {
+    name: "Input Pulse Border",
+    component: InputPulseBorder,
+    exampleComponent: InputPulseBorder,
+    slug: "input-pulse-border",
+    type: "input",
+    twConfig: TWCONFIG["border-width"],
   },
   {
     name: "Tooltip",
@@ -110,8 +168,6 @@ export const COMPONENTS: ComponentObj[] = [
     exampleComponent: TooltipExample,
     slug: "tooltip",
     type: "tooltip",
-    prevComponent: "Input",
-    nextComponent: "Modal",
   },
   // {
   //   name: "Modal",

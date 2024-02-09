@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Button from "../lab/button/Button";
+import Button from "../lab/button/ButtonBackgroundShine";
 import Modal from "../lab/modal/Modal";
 
 type Props = {};

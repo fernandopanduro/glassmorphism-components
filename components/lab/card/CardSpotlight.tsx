@@ -1,11 +1,7 @@
 "use client";
 import React, { useRef, useState } from "react";
 
-type Props = {
-  children: React.ReactNode;
-};
-
-const Card = ({ children }: Props) => {
+const CardSpotlight = () => {
   const divRef = useRef<HTMLDivElement>(null);
   const [isFocused, setIsFocused] = useState(false);
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -54,9 +50,9 @@ const Card = ({ children }: Props) => {
           background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgba(255,182,255,.1), transparent 40%)`,
         }}
       />
-      {children}
+      <p className="text-sm text-gray-200">Card Content</p>
     </div>
   );
 };
 
-export default Card;
+export default CardSpotlight;
