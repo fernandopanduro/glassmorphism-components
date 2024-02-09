@@ -1,5 +1,5 @@
 import React from "react";
-import Tooltip from "../lab/Tooltip";
+import Tooltip from "../lab/tooltip/Tooltip";
 
 type Props = {};
 

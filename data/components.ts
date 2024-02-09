@@ -6,14 +6,14 @@ import InputExample from "@/components/glassmorphism-example/Input";
 import ModalExample from "@/components/glassmorphism-example/Modal";
 import HoverCardExample from "@/components/glassmorphism-example/Modal";
 import TooltipExample from "@/components/glassmorphism-example/Tooltip";
-import Badge from "@/components/lab/Badge";
+import Badge from "@/components/lab/badge/Badge";
 import Button from "@/components/lab/button/Button";
-import Card from "@/components/lab/Card";
+import Card from "@/components/lab/card/Card";
 import Drawer from "@/components/lab/drawer/Drawer";
-import Input from "@/components/lab/Input";
-import Modal from "@/components/lab/Modal";
-import HoverCard from "@/components/lab/Modal";
-import Tooltip from "@/components/lab/Tooltip";
+import Input from "@/components/lab/input/Input";
+import Modal from "@/components/lab/modal/Modal";
+import HoverCard from "@/components/lab/modal/Modal";
+import Tooltip from "@/components/lab/tooltip/Tooltip";
 const TWCONFIG = {
   ["text-gradient"]: {
     animation: {
@@ -78,64 +78,56 @@ export const COMPONENTS: ComponentObj[] = [
     nextComponent: "drawer",
   },
   {
-    name: "Drawer",
-    component: Drawer,
-    exampleComponent: DrawerExample,
-    slug: "drawer",
-    type: "drawer",
-    prevComponent: "Button",
-    nextComponent: "Drawer",
+    name: "Badge",
+    component: Badge,
+    exampleComponent: BadgeExample,
+    slug: "badge",
+    type: "badge",
+    prevComponent: "Drawer",
+    nextComponent: "Card",
   },
+  {
+    name: "Card",
+    component: Card,
+    exampleComponent: CardExample,
+    slug: "card",
+    type: "card",
+    prevComponent: "Badge",
+    nextComponent: "Input",
+  },
+  {
+    name: "Input",
+    component: Input,
+    exampleComponent: InputExample,
+    slug: "input",
+    type: "input",
+    prevComponent: "Card",
+    nextComponent: "Tooltip",
+  },
+  {
+    name: "Tooltip",
+    component: Tooltip,
+    exampleComponent: TooltipExample,
+    slug: "tooltip",
+    type: "tooltip",
+    prevComponent: "Input",
+    nextComponent: "Modal",
+  },
+  // {
+  //   name: "Modal",
+  //   component: Modal,
+  //   exampleComponent: ModalExample,
+  //   slug: "modal",
+  //   type: "modal",
+  //   prevComponent: "Tooltip",
+  //   nextComponent: "Drawer",
+  // },
+  // {
+  //   name: "Drawer",
+  //   component: Drawer,
+  //   exampleComponent: DrawerExample,
+  //   slug: "drawer",
+  //   type: "drawer",
+  //   prevComponent: "Modal",
+  // },
 ];
-
-// const components: ComponentObj[] = [
-//   {
-//     name: "button",
-//     component: Button,
-//     exampleComponent: ButtonExample,
-//     nextComponent: "drawer",
-//   },
-//   {
-//     name: "drawer",
-//     component: Drawer,
-//     exampleComponent: DrawerExample,
-//     nextComponent: "modal",
-//     prevComponent: "button",
-//   },
-//   {
-//     name: "modal",
-//     component: Modal,
-//     exampleComponent: ModalExample,
-//     nextComponent: "tooltip",
-//     prevComponent: "drawer",
-//   },
-//   {
-//     name: "tooltip",
-//     component: Tooltip,
-//     exampleComponent: TooltipExample,
-//     nextComponent: "input",
-//     prevComponent: "modal",
-//   },
-//   {
-//     name: "input",
-//     component: Input,
-//     exampleComponent: InputExample,
-//     nextComponent: "badge",
-//     prevComponent: "tooltip",
-//   },
-//   {
-//     name: "badge",
-//     component: Badge,
-//     exampleComponent: BadgeExample,
-//     prevComponent: "input",
-//     nextComponent: "card",
-//   },
-//   {
-//     name: "card",
-//     component: Card,
-//     exampleComponent: CardExample,
-//     prevComponent: "badge",
-//   },
-// ];
-
-// export default components;

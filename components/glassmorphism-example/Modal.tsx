@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Button from "../lab/button/Button";
-import Modal from "../lab/Modal";
+import Modal from "../lab/modal/Modal";
 
 type Props = {};
 

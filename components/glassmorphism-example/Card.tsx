@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../lab/Card";
+import Card from "../lab/card/Card";
 
 const CardExample = () => {
   return (

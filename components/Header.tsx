@@ -51,12 +51,12 @@ const Header = () => {
             onMouseLeave={handleMouseLeave}>
             <Link href={"/docs/components/button"}>Components</Link>
           </li>
-          <li
+          {/* <li
             className="px-4 py-1"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}>
             <Link href={"/pricing"}>Princing</Link>
-          </li>
+          </li> */}
           <li
             className="px-4 py-1"
             onMouseEnter={handleMouseEnter}

@@ -43,7 +43,7 @@ const Drawer = ({ active, setActive, children }: Props) => {
           transform: `translateX(${isVisible ? "0" : "-300px"})`,
         }}
         className="z-10 h-full w-[300px] border-r border-white/15 bg-black/50 font-bold transition-transform duration-300">
-        {children}
+        {children ? children : <h1>Drawer</h1>}
       </div>
     </div>,
     document.getElementById("drawer") as HTMLElement

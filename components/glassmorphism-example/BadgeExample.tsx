@@ -1,5 +1,5 @@
 import React from "react";
-import Badge from "../lab/Badge";
+import Badge from "../lab/badge/Badge";
 
 type Props = {};
 
