@@ -45,14 +45,14 @@ const ComponentPage = async ({ params }: { params: { slug: string } }) => {
   return (
     <div className=" flex gap-5 ">
       <section className="flex-1">
-        <h1 className="text-md mb-2 font-light text-gray-400">
+        <h1 id="example" className="text-md mb-2 font-light text-gray-400">
           {currentComponentData.name}
         </h1>
         <div className="w-full">
           <ComponentPlayground isCentered>
             <currentComponentData.exampleComponent />
           </ComponentPlayground>
-          <div className="mt-8">
+          <div id="usage" className="mt-8">
             <CodeBlock code={code} lang="tsx" />
           </div>
           {Boolean(twConfig) ? (
@@ -89,16 +89,16 @@ const ComponentPage = async ({ params }: { params: { slug: string } }) => {
         <ul className="m-0 list-none">
           <li className="mt-0 pt-2">
             <a
-              href="#usage"
+              href="#example"
               className="inline-block no-underline transition-colors hover:text-foreground text-muted-foreground">
-              Usage
+              Example
             </a>
           </li>
           <li className="mt-0 pt-2">
             <a
-              href="#example"
+              href="#usage"
               className="inline-block no-underline transition-colors hover:text-foreground text-muted-foreground">
-              Example
+              Usage
             </a>
           </li>
         </ul>
