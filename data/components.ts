@@ -12,8 +12,9 @@ import CardTilt from "@/components/lab/card/CardTilt";
 import ButtonBackgroundShine from "@/components/lab/button/ButtonBackgroundShine";
 import BadgeShine from "@/components/lab/badge/BadgeShine";
 import BadgeAnimatedGradientBorder from "@/components/lab/badge/BadgeAnimatedGradientBorder";
-import Form from "@/components/lab/form/Form";
+
 import Reviews from "@/components/lab/section/Review";
+import FormGlassmorphism from "@/components/lab/form/FormGlassmorphism";
 const TWCONFIG = {
   ["text-gradient"]: {
     animation: {
@@ -180,10 +181,10 @@ export const COMPONENTS: ComponentObj[] = [
     type: "tooltip",
   },
   {
-    name: "Form",
-    component: Form,
-    exampleComponent: Form,
-    slug: "form",
+    name: "Form Glassmorphism",
+    component: FormGlassmorphism,
+    exampleComponent: FormGlassmorphism,
+    slug: "form-glassmorphism",
     type: "form",
     twConfig: TWCONFIG["form-square"],
   },

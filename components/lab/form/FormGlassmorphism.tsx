@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 type Props = {};
 
-const Form = (props: Props) => {
+const FormGlassmorphism = (props: Props) => {
   const [inputValueUsername, setInputValueUsername] = useState("");
   const [inputValuePassword, setInputValuePassword] = useState("");
 
@@ -90,4 +90,4 @@ const Form = (props: Props) => {
   );
 };
 
-export default Form;
+export default FormGlassmorphism;
