@@ -13,6 +13,7 @@ import ButtonBackgroundShine from "@/components/lab/button/ButtonBackgroundShine
 import BadgeShine from "@/components/lab/badge/BadgeShine";
 import BadgeAnimatedGradientBorder from "@/components/lab/badge/BadgeAnimatedGradientBorder";
 import Form from "@/components/lab/form/form";
+import Reviews from "@/components/lab/section/Review";
 const TWCONFIG = {
   ["text-gradient"]: {
     animation: {
@@ -185,6 +186,13 @@ export const COMPONENTS: ComponentObj[] = [
     slug: "form",
     type: "form",
     twConfig: TWCONFIG["form-square"],
+  },
+  {
+    name: "Review",
+    component: Reviews,
+    exampleComponent: Reviews,
+    slug: "review",
+    type: "section",
   },
   // {
   //   name: "Modal",
