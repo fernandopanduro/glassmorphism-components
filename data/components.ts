@@ -12,7 +12,7 @@ import CardTilt from "@/components/lab/card/CardTilt";
 import ButtonBackgroundShine from "@/components/lab/button/ButtonBackgroundShine";
 import BadgeShine from "@/components/lab/badge/BadgeShine";
 import BadgeAnimatedGradientBorder from "@/components/lab/badge/BadgeAnimatedGradientBorder";
-import Form from "@/components/lab/form/form";
+import Form from "@/components/lab/form/Form";
 import Reviews from "@/components/lab/section/Review";
 const TWCONFIG = {
   ["text-gradient"]: {
