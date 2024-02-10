@@ -43,12 +43,12 @@ const ComponentPage = async ({ params }: { params: { slug: string } }) => {
   const twConfig = JSON.stringify(currentComponentData?.twConfig, null, 2);
 
   return (
-    <div className=" flex gap-5 ">
+    <div className="flex gap-5">
       <section className="flex-1">
         <h1 id="example" className="text-md mb-2 font-light text-gray-400">
           {currentComponentData.name}
         </h1>
-        <div className="w-full">
+        <div className="w-full relative">
           <ComponentPlayground isCentered>
             <currentComponentData.exampleComponent />
           </ComponentPlayground>

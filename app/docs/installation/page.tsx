@@ -42,7 +42,10 @@ const Installation = (props: Props) => {
         </div>
         <Pagination
           prev={{ name: "Introduction", path: "/docs/" }}
-          next={{ name: "Button", path: "/docs/components/button" }}
+          next={{
+            name: "Button",
+            path: "/docs/components/button-background-shine",
+          }}
         />
       </section>
       <div className="w-[300px]">

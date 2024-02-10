@@ -1,14 +1,7 @@
-import BadgeExample from "@/components/glassmorphism-example/BadgeExample";
-import ButtonExample from "@/components/glassmorphism-example/Button";
-
 import TooltipExample from "@/components/glassmorphism-example/Tooltip";
-import Badge from "@/components/lab/badge/BadgeShine";
-import Button from "@/components/lab/button/ButtonBackgroundShine";
 import ButtonAnimatedGradient from "@/components/lab/button/ButtonBackgroundSpotlight";
 import ButtonRotatingBackgroundGradient from "@/components/lab/button/ButtonRotatingBackgroundGradient";
-
 import InputGradientBorder from "@/components/lab/input/InputGradientBorder";
-
 import Tooltip from "@/components/lab/tooltip/Tooltip";
 import InputSpotlightBorder from "@/components/lab/input/InputSpotlightBorder";
 import InputPulseBorder from "@/components/lab/input/InputPulseBorder";
