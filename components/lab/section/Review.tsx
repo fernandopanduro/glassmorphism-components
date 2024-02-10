@@ -4,7 +4,7 @@ type Props = {};
 
 const Reviews = (props: Props) => {
   return (
-    <section className="w-100 h-screen grid place-items-center">
+    <section className="w-100 py-5 grid place-items-center">
       <ul className="relative flex flex-col transition-all group/list gap-4">
         <li className="group-hover/list:shadow-xl group-hover/list:translate-x-0 group-hover/list:translate-y-0 -translate-x-20 translate-y-10 group-hover/list:rotate-0 -rotate-12 relative w-[450px] h-24 p-4 rounded-md bg-[rgba(255,255,255,0.1)] backdrop-blur-sm transition-all shadow-lg shadow-[rgba(0,0,0,.25)] group">
           <div className="flex justify-start items-center gap-5 group-hover:-translate-x-10 transition-all">

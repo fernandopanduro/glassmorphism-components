@@ -4,7 +4,7 @@ type Props = {};
 
 const CardPresentation = (props: Props) => {
   return (
-    <div className="w-100 h-screen grid place-items-center">
+    <div className="w-100 p-8 grid place-items-center">
       <article className="relative w-80 h-80 rounded-2xl grid place-items-center transition-all duration-300 group/article hover:rotate-45">
         <picture className="absolute inset-0 rounded-2xl overflow-hidden">
           <img

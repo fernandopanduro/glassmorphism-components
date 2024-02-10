@@ -15,6 +15,7 @@ import BadgeAnimatedGradientBorder from "@/components/lab/badge/BadgeAnimatedGra
 
 import Reviews from "@/components/lab/section/Review";
 import FormGlassmorphism from "@/components/lab/form/FormGlassmorphism";
+import CardPresentation from "@/components/lab/section/CardPresentation";
 const TWCONFIG = {
   ["text-gradient"]: {
     animation: {
@@ -193,6 +194,13 @@ export const COMPONENTS: ComponentObj[] = [
     component: Reviews,
     exampleComponent: Reviews,
     slug: "review",
+    type: "section",
+  },
+  {
+    name: "Card Presentation",
+    component: CardPresentation,
+    exampleComponent: CardPresentation,
+    slug: "card-presentation",
     type: "section",
   },
   // {
