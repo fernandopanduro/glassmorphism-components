@@ -12,6 +12,7 @@ import CardTilt from "@/components/lab/card/CardTilt";
 import ButtonBackgroundShine from "@/components/lab/button/ButtonBackgroundShine";
 import BadgeShine from "@/components/lab/badge/BadgeShine";
 import BadgeAnimatedGradientBorder from "@/components/lab/badge/BadgeAnimatedGradientBorder";
+import Form from "@/components/lab/form/form";
 const TWCONFIG = {
   ["text-gradient"]: {
     animation: {
@@ -49,6 +50,21 @@ const TWCONFIG = {
       "border-width": {
         from: { width: "10px", opacity: "0" },
         to: { width: "100px", opacity: "1" },
+      },
+    },
+  },
+  ["form-square"]: {
+    animation: {
+      "form-square": "form-square 10s infinite alternate",
+    },
+    keyframes: {
+      "form-square": {
+        from: {
+          transform: "translateY(-40px)",
+        },
+        to: {
+          transform: "translateY(40px)",
+        },
       },
     },
   },
@@ -161,6 +177,14 @@ export const COMPONENTS: ComponentObj[] = [
     exampleComponent: TooltipExample,
     slug: "tooltip",
     type: "tooltip",
+  },
+  {
+    name: "Form",
+    component: Form,
+    exampleComponent: Form,
+    slug: "form",
+    type: "form",
+    twConfig: TWCONFIG["form-square"],
   },
   // {
   //   name: "Modal",

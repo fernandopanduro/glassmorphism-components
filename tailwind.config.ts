@@ -16,6 +16,7 @@ const config: Config = {
       animation: {
         "background-shine": "background-shine 2s linear infinite",
         "border-width": "border-width 3s infinite alternate",
+        "form-square": "form-square 10s infinite alternate",
       },
       keyframes: {
         "background-shine": {
@@ -34,6 +35,14 @@ const config: Config = {
           to: {
             width: "100px",
             opacity: "1",
+          },
+        },
+        "form-square": {
+          from: {
+            transform: "translateY(-40px)",
+          },
+          to: {
+            transform: "translateY(40px)",
           },
         },
       },
