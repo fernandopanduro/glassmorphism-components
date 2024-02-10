@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 type Props = {};
 
-const page = (props: Props) => {
+const Form = (props: Props) => {
   const [inputValueUsername, setInputValueUsername] = useState("");
   const [inputValuePassword, setInputValuePassword] = useState("");
 
@@ -90,4 +90,4 @@ const page = (props: Props) => {
   );
 };
 
-export default page;
+export default Form;
