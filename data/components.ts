@@ -16,7 +16,7 @@ import BadgeAnimatedGradientBorder from "@/components/lab/badge/BadgeAnimatedGra
 import Reviews from "@/components/lab/section/Review";
 import FormGlassmorphism from "@/components/lab/form/FormGlassmorphism";
 import CardPresentation from "@/components/lab/section/CardPresentation";
-import CardPresentationGlassmorphism from "@/components/lab/section/cardPresentationGlassmorphism";
+import CardPresentationGlassmorphism from "@/components/lab/section/CardPresentationGlassmorphism";
 const TWCONFIG = {
   ["text-gradient"]: {
     animation: {
