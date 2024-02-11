@@ -10,16 +10,16 @@ const DocsLayout = ({
 }>) => {
   return (
     <>
-      <main className="flex gap-10 container mx-auto pt-28 pb-28 relative bg-transparent">
+      <main className="flex gap-10 container mx-auto pt-28 pb-28 relative bg-transparent px-5">
         <Sidebar />
         {children}
       </main>
       <div
         style={{ backgroundImage: `url(${beams.src})` }}
-        className="absolute top-0 left-0 h-full w-full bg-cover bg-center -z-10"></div>
+        className="min-h-screen absolute top-0 left-0 h-full w-full bg-cover bg-center -z-10"></div>
       <div
         style={{ backgroundImage: `url(${grid.src})` }}
-        className="absolute top-0 left-0 h-full w-full -z-10  [background-position:calc(100%+5px)_calc(100%+5px)]"></div>
+        className="min-h-screen absolute top-0 left-0 h-full w-full -z-10  [background-position:calc(100%+5px)_calc(100%+5px)]"></div>
     </>
   );
 };

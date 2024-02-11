@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Sidebar() {
   return (
-    <aside className=" min-h-[calc(100svh)] w-[300px]">
+    <aside className="hidden lg:block min-h-[calc(100svh)] w-[300px]">
       <div className=" block p-4 text-xl font-bold m800:p-4 m800:text-base">
         Getting started
       </div>

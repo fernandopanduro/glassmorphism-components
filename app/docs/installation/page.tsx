@@ -48,7 +48,7 @@ const Installation = (props: Props) => {
           }}
         />
       </section>
-      <div className="w-[300px]">
+      <div className="w-100 max-w-36 hidden 2xl:block">
         <h4>On This Page</h4>
         <ul className="m-0 list-none">
           <li className="mt-0 pt-2">
