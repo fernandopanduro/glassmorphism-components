@@ -44,11 +44,11 @@ const ComponentPage = async ({ params }: { params: { slug: string } }) => {
 
   return (
     <div className="flex gap-5">
-      <section className="flex-1">
+      <section className="flex-1 2xl:w-full">
         <h1 id="example" className="text-md mb-2 font-light text-gray-400">
           {currentComponentData.name}
         </h1>
-        <div className="w-full relative">
+        <div className="relative">
           <ComponentPlayground isCentered>
             <currentComponentData.exampleComponent />
           </ComponentPlayground>
@@ -84,7 +84,7 @@ const ComponentPage = async ({ params }: { params: { slug: string } }) => {
           />
         </div>
       </section>
-      <div className="w-[300px]">
+      <div className="w-100 max-w-36 hidden 2xl:block">
         <h4>On This Page</h4>
         <ul className="m-0 list-none">
           <li className="mt-0 pt-2">

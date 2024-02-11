@@ -10,7 +10,7 @@ const DocsLayout = ({
 }>) => {
   return (
     <>
-      <main className="flex container mx-auto pt-28 pb-28 relative bg-transparent">
+      <main className="flex gap-10 container mx-auto pt-28 pb-28 relative bg-transparent">
         <Sidebar />
         {children}
       </main>
