@@ -3,9 +3,15 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { FaGithub } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
+
 import Button from "./lab/button/ButtonBackgroundShine";
+import Drawer from "./lab/drawer/Drawer";
+import Sidebar from "./Sidebar";
 
 const Header = () => {
+  const [isDrawerActive, setIsDrawerActive] = useState(false);
+
   const [menuVisible, setMenuVisible] = useState(false);
   const [menuPosition, setMenuPosition] = useState({
     left: 0,
@@ -40,25 +46,19 @@ const Header = () => {
             </Link>
           </li>
           <li
-            className="px-4 py-1"
+            className="px-4 py-1 hidden md:block"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}>
             <Link href={"/docs"}>Docs</Link>
           </li>
           <li
-            className="px-4 py-1"
+            className="px-4 py-1 hidden md:block"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}>
             <Link href={"/docs/components/button"}>Components</Link>
           </li>
-          {/* <li
-            className="px-4 py-1"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
-            <Link href={"/pricing"}>Princing</Link>
-          </li> */}
           <li
-            className="px-4 py-1"
+            className="px-4 py-1 hidden md:block"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}>
             <Link
@@ -70,7 +70,7 @@ const Header = () => {
             </Link>
           </li>
         </ul>
-        <ul className="flex items-center">
+        <ul className="flex gap-1 md:gap-0 items-center">
           <li
             className="px-2 py-2"
             onMouseEnter={handleMouseEnter}
@@ -83,13 +83,28 @@ const Header = () => {
               <FaGithub size={24} />
             </Link>
           </li>
-          <li className="px-2 py-2">
+          <li
+            className="px-2 py-2 block md:hidden"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}>
+            <FaBars
+              size={26}
+              onClick={() => {
+                setIsDrawerActive(true);
+              }}
+            />
+          </li>
+          <li className="px-2 py-2 hidden md:block">
             <Link href={"/docs"}>
               <Button>Get Started</Button>
             </Link>
           </li>
         </ul>
       </div>
+
+      <Drawer active={isDrawerActive} setActive={setIsDrawerActive}>
+        <Sidebar />
+      </Drawer>
 
       {menuVisible && (
         <div
