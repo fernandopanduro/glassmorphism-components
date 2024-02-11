@@ -222,8 +222,6 @@ export const COMPONENTS: ComponentObj[] = [
     exampleComponent: ModalExample,
     slug: "modal",
     type: "modal",
-    prevComponent: "Tooltip",
-    nextComponent: "Drawer",
   },
   {
     name: "Drawer",
@@ -231,6 +229,5 @@ export const COMPONENTS: ComponentObj[] = [
     exampleComponent: DrawerExample,
     slug: "drawer",
     type: "drawer",
-    prevComponent: "Modal",
   },
 ];
