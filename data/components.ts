@@ -17,6 +17,10 @@ import Reviews from "@/components/lab/section/Review";
 import FormGlassmorphism from "@/components/lab/form/FormGlassmorphism";
 import CardPresentation from "@/components/lab/section/CardPresentation";
 import CardGlassmorphism from "@/components/lab/section/CardGlassmorphism";
+import Modal from "@/components/lab/modal/Modal";
+import ModalExample from "@/components/glassmorphism-example/Modal";
+import Drawer from "@/components/lab/drawer/Drawer";
+import DrawerExample from "@/components/glassmorphism-example/Drawer";
 
 const TWCONFIG = {
   ["text-gradient"]: {
@@ -212,21 +216,21 @@ export const COMPONENTS: ComponentObj[] = [
     slug: "card-glassmorphism",
     type: "section",
   },
-  // {
-  //   name: "Modal",
-  //   component: Modal,
-  //   exampleComponent: ModalExample,
-  //   slug: "modal",
-  //   type: "modal",
-  //   prevComponent: "Tooltip",
-  //   nextComponent: "Drawer",
-  // },
-  // {
-  //   name: "Drawer",
-  //   component: Drawer,
-  //   exampleComponent: DrawerExample,
-  //   slug: "drawer",
-  //   type: "drawer",
-  //   prevComponent: "Modal",
-  // },
+  {
+    name: "Modal",
+    component: Modal,
+    exampleComponent: ModalExample,
+    slug: "modal",
+    type: "modal",
+    prevComponent: "Tooltip",
+    nextComponent: "Drawer",
+  },
+  {
+    name: "Drawer",
+    component: Drawer,
+    exampleComponent: DrawerExample,
+    slug: "drawer",
+    type: "drawer",
+    prevComponent: "Modal",
+  },
 ];

@@ -54,6 +54,8 @@ export default function RootLayout({
         <Header />
         {children}
         <Analytics />
+        <div id="modal"></div>
+        <div id="drawer"></div>
       </body>
     </html>
   );
