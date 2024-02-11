@@ -2,7 +2,7 @@ import React from "react";
 
 type Props = {};
 
-const CardPresentationGlassmorphism = (props: Props) => {
+const CardGlassmorphism = (props: Props) => {
   return (
     <div className="w-100 py-8 grid place-items-center">
       <article className="relative w-80 h-96 overflow-hidden shadow-md shadow-[rgba(0,0,0,0.2)] rounded-2xl flex justify-center items-center group/article">
@@ -110,4 +110,4 @@ const CardPresentationGlassmorphism = (props: Props) => {
   );
 };
 
-export default CardPresentationGlassmorphism;
+export default CardGlassmorphism;
