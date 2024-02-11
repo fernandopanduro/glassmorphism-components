@@ -2,37 +2,37 @@ import React from "react";
 
 type Props = {};
 
-const CardPresentation = (props: Props) => {
+const CardPresentationGlassmorphism = (props: Props) => {
   return (
-    <div className="w-100 p-8 grid place-items-center">
-      <article className="relative w-80 h-80 rounded-2xl grid place-items-center transition-all duration-300 group/article hover:rotate-45">
-        <picture className="absolute inset-0 rounded-2xl overflow-hidden">
+    <div className="w-100 py-8 grid place-items-center">
+      <article className="relative w-80 h-96 overflow-hidden shadow-md shadow-[rgba(0,0,0,0.2)] rounded-2xl flex justify-center items-center group/article">
+        <picture className="w-full h-full ">
           <img
-            className="absolute top-0 left-0 w-full h-full object-cover transition-all duration-300 group-hover/article:opacity-50"
+            className="w-100 h-full object-cover"
             src="https://images.pexels.com/photos/2690323/pexels-photo-2690323.jpeg"
             alt="Woman"
             decoding="async"
             loading="lazy"
-            width={112}
-            height={112}
+            width={320}
+            height={384}
             draggable={false}
           />
         </picture>
-        <div className="rounded-2xl absolute inset-0 bg-[rgba(255,255,255,0.1)]  backdrop-blur-md grid place-items-center scale-0 group-hover/article:scale-100 group-hover/article:-rotate-45 transition-all duration-300">
+        <div className="absolute -bottom-40 group-hover/article:bottom-0 w-full h-40 flex gap-4 flex-col justify-center items-center z-10 backdrop-blur-lg shadow-md shadow-[rgba(0,0,0,0.1)] border border-white/10 transition-all">
           <div className="flex flex-col justify-center items-center">
-            <h2 className="text-2xl text-white font-medium text-center uppercase">
-              Someone
-            </h2>
-            <span className="font-normal text-base text-center w-100">
-              SEO Expert
+            <h3 className="text-white font-bold translate-y-5 opacity-0 text-2xl text-center uppercase group-hover/article:translate-y-0 group-hover/article:opacity-100 transition-all delay-500 duration-200">
+              Someone Famous
+            </h3>
+            <span className="text-gray-300 text-base text-center capitalize translate-y-5 opacity-0 group-hover/article:translate-y-0 group-hover/article:opacity-100 transition-all delay-500 duration-300">
+              Creative Desingner
             </span>
           </div>
-          <ul className="absolute bottom-0 w-full flex justify-center gap-2 p-5 bg-[rgba(255,255,255,0.01)] backdrop-blur-md">
+          <ul className="flex gap-3">
             <li>
               <a
                 href="#"
                 target="__black"
-                className="text-base text-gray-400 hover:text-white scale-0 group-hover/article:scale-100 transition-all">
+                className="text-base text-gray-400 hover:text-white transition-all translate-y-5 group-hover/article:translate-y-0 opacity-0 group-hover/article:opacity-100 delay-700 duration-300">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="icon icon-tabler icon-tabler-brand-facebook-filled"
@@ -57,7 +57,7 @@ const CardPresentation = (props: Props) => {
               <a
                 href="#"
                 target="__black"
-                className="text-base text-gray-400 hover:text-white scale-0 group-hover/article:scale-100 transition-all">
+                className="text-base text-gray-400 hover:text-white transition-all translate-y-5 group-hover/article:translate-y-0 opacity-0 group-hover/article:opacity-100 delay-[800ms] duration-300">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="icon icon-tabler icon-tabler-brand-youtube-filled"
@@ -82,7 +82,7 @@ const CardPresentation = (props: Props) => {
               <a
                 href="#"
                 target="__black"
-                className="text-base text-gray-400 hover:text-white scale-0 group-hover/article:scale-100 transition-all">
+                className="text-base text-gray-400 hover:text-white transition-all translate-y-5 group-hover/article:translate-y-0 opacity-0 group-hover/article:opacity-100 delay-[900ms] duration-300">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="icon icon-tabler icon-tabler-brand-twitter-filled"
@@ -110,4 +110,4 @@ const CardPresentation = (props: Props) => {
   );
 };
 
-export default CardPresentation;
+export default CardPresentationGlassmorphism;
