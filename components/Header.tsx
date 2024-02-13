@@ -55,7 +55,9 @@ const Header = () => {
             className="px-4 py-1 hidden md:block"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}>
-            <Link href={"/docs/components/button"}>Components</Link>
+            <Link href={"/docs/components/button-background-shine"}>
+              Components
+            </Link>
           </li>
           <li
             className="px-4 py-1 hidden md:block"
